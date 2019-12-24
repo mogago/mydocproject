@@ -1,0 +1,295 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="es" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Publicando documentación en RTD &mdash; documentación de mydocproject - </title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Usando el tema RTD localmente" href="locally.html" />
+    <link rel="prev" title="Generando documentación con Sphinx" href="documentation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> mydocproject
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Guía - creación de documentación</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="starting.html">Primeros pasos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">Generando documentación con Sphinx</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Publicando documentación en RTD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="locally.html">Usando el tema RTD localmente</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Demos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="demo/structure.html">1. Structural Elements 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo/structure.html#structural-elements-2">2. Structural Elements 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo/paragraph.html">3. Paragraph Level Markup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo/lists_tables.html">4. Listas y Tablas</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">mydocproject</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Publicando documentación en RTD</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/publishing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="publicando-documentacion-en-rtd">
+<h1>Publicando documentación en RTD<a class="headerlink" href="#publicando-documentacion-en-rtd" title="Enlazar permanentemente con este título">¶</a></h1>
+<p><a class="reference external" href="https://readthedocs.org/">Read the Docs</a> simplifica la documentación de software, mediante la automatización del building, versionamiento y <a class="reference external" href="https://docs.readthedocs.io/en/stable/">hosting de nuestros docs</a>.</p>
+<ol class="arabic simple">
+<li>Primero debemos subir la documentación generada con Sphinx a nuestro repositorio en Github. Ejecutar los comandos desde la carpeta raíz del repositorio:</li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add .
+git commit -m <span class="s2">&quot;Primer commit para creacion de Documentacion&quot;</span>
+git push
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li>Entrar a <a class="reference external" href="https://readthedocs.org/dashboard/">nuestro dashboard de la página de RTD</a> , y teniendo nuestra cuenta de Github asociada, importaremos el proyecto haciendo clic en <span class="guilabel">Importar un proyecto</span>:</li>
+</ol>
+<div class="figure align-center" id="id1">
+<img alt="_images/2_importar-proyecto-rtd.png" src="_images/2_importar-proyecto-rtd.png" />
+<p class="caption"><span class="caption-text">Dashboard de RTD - Botón <span class="guilabel">Importar un proyecto</span></span></p>
+</div>
+<p>En la siguiente pantalla, actualizar la lista de repositorios con el botón de un símbolo de <span class="guilabel">Actualizar</span>. Seleccionar el repositorio de Github que vamos a importar haciendo clic en el botón <span class="guilabel">+</span>:</p>
+<div class="figure align-center" id="id2">
+<img alt="_images/3_importar-repo.png" src="_images/3_importar-repo.png" />
+<p class="caption"><span class="caption-text">Dashboard de RTD - Importar un repositorio</span></p>
+</div>
+<p>Luego revisar la opciones del proyecto como el nombre que tendrá la URL y clic en <span class="guilabel">Siguiente</span>:</p>
+<div class="figure align-center" id="id3">
+<img alt="_images/4_import-options.png" src="_images/4_import-options.png" />
+<p class="caption"><span class="caption-text">Dashboard de RTD - Opciones para importar</span></p>
+</div>
+<ol class="arabic simple" start="3">
+<li>Para hacer un build del repositorio desde RTD, clic en <span class="guilabel">Build version</span>:</li>
+</ol>
+<div class="figure align-center" id="id4">
+<img alt="_images/5_build-version.png" src="_images/5_build-version.png" />
+<p class="caption"><span class="caption-text">Dashboard de RTD - Build de repositorio</span></p>
+</div>
+<div class="figure align-center" id="id5">
+<img alt="_images/6_compilacion-completada.png" src="_images/6_compilacion-completada.png" />
+<p class="caption"><span class="caption-text">Dashboard de RTD - Compilación completada</span></p>
+</div>
+<div class="figure align-center" id="id6">
+<img alt="_images/7_compilacion-log.png" src="_images/7_compilacion-log.png" />
+<p class="caption"><span class="caption-text">Dashboard de RTD - Log de compilación</span></p>
+</div>
+<ol class="arabic simple" start="4">
+<li>Ahora nuestra documentación se encuentra pública, estando hosteada por RTD bajo el dominio readthedocs.io. Podremos verla haciendo clic en el botón <span class="guilabel">Ver documentación</span> de la anterior pantalla:</li>
+</ol>
+<p>Página web de ejemplo: <a class="reference external" href="https://mydocproject1.readthedocs.io/en/latest/">https://mydocproject1.readthedocs.io/en/latest/</a></p>
+<div class="figure align-center" id="id7">
+<img alt="_images/8_web-resultado.png" src="_images/8_web-resultado.png" />
+<p class="caption"><span class="caption-text">Página de documentación hosteada bajo el dominio readthedocs.io</span></p>
+</div>
+<ol class="arabic simple" start="5">
+<li>Para cambiar el tema de la página web actual (Alabaster) al que usa RTD por defecto editar el archivo <code class="docutils literal notranslate"><span class="pre">docs/source/conf.py</span></code> comentando la línea de <code class="docutils literal notranslate"><span class="pre">html_theme</span> <span class="pre">=</span> <span class="pre">'alabaster'</span></code>:</li>
+</ol>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="c1"># -- Options for HTML output -------------------------------------------------</span>
+
+ <span class="c1"># The theme to use for HTML and HTML Help pages.  See the documentation for</span>
+ <span class="c1"># a list of builtin themes.</span>
+ <span class="c1">#</span>
+<span class="hll"> <span class="c1">#html_theme = &#39;alabaster&#39;</span>
+</span></pre></div>
+</td></tr></table></div>
+<div class="admonition warning">
+<p class="first admonition-title">Advertencia</p>
+<p class="last">El cambio de tema solo se está aplicando para la página pública, el tema no se aplica a los archivos locales.</p>
+</div>
+<p>Luego actualizar el repositorio de Github:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git add .
+git commit -m <span class="s2">&quot;Deshabilitando tema por defecto de Sphinx&quot;</span>
+git push
+</pre></div>
+</div>
+<p>La página pública de la documentación ahora tendrá el tema de Read the Docs:</p>
+<div class="figure align-center" id="id8">
+<img alt="_images/10_rtd-theme.png" src="_images/10_rtd-theme.png" />
+<p class="caption"><span class="caption-text">Tema de Read the Docs en página pública</span></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="locally.html" class="btn btn-neutral float-right" title="Usando el tema RTD localmente" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="documentation.html" class="btn btn-neutral float-left" title="Generando documentación con Sphinx" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Gabriel
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
