@@ -15,3 +15,8 @@ También se muestran ejemplos demostrativos de uso de reStructuredText basados e
 .. _Read The Docs (RTD): https://docs.readthedocs.io/en/stable/index.html
 .. _Sphinx: http://www.sphinx-doc.org/en/master/
 .. _otra documentación pública: https://sphinx-rtd-theme.readthedocs.io/en/latest/
+
+.. figure:: docs/source/images/screenshot-web.png
+    :align: center
+
+    Captura de pantalla de la página web
