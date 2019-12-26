@@ -8,7 +8,7 @@ Generando documentación con Sphinx
 .. _MkDocs: https://www.mkdocs.org/
 .. _Read The Docs: https://readthedocs.org/
 
-1. Dentro del repositorio descargado crear un directorio llamado ``docs`` donde se encontrará toda nuestra documentación y movernos a ese directorio:
+1. Dentro del repositorio clonado crear un directorio llamado ``docs`` donde se encontrará toda nuestra documentación y movernos a ese directorio:
 
 .. code-block:: bash
 
