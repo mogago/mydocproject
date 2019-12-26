@@ -41,6 +41,9 @@ Paragraphs contain text and may contain inline markup:
 - For example, and ``menuselection`` can be seen here that breaks is too long to fit on this line.
 - :menuselection:`My --> Software --> Some menu --> Some sub menu 1 --> sub menu 2`.
 
+* Link a otro archivo .rst del mismo proyecto (main header del archivo): :ref:`structuralelements1`
+* Link a una sección de otro archivo .rst del mismo proyecto (subsección del archivo): :ref:`sampledocumentsubsection`
+
 .. DO NOT RE-WRAP THE FOLLOWING PARAGRAPH!
 
 Let's test wrapping and whitespace significance in inline literals: ``This is an example of --inline-literal --text, --including some-- strangely--hyphenated-words.  Adjust-the-width-of-your-browser-window to see how the text is wrapped.  -- ---- --------  Now note    the spacing    between the    words of    this sentence    (words should    be grouped    in pairs).``
@@ -412,6 +415,10 @@ A figure directive with center alignment
 
 Admonitions
 -----------
+
+::
+
+    .. Attention:: Colocar el texto deseado aquí
 
 .. Attention:: Attention (Atención)
 
